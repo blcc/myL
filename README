@@ -1,0 +1,24 @@
+# myL.sh
+This script demonstrate the idea of shorten url at local host.
+
+# Usage:
+Shorten url:
+```
+$ myL.sh https://www.google.com
+L://ef7ef
+```
+
+Restore url (after shorten it):
+```
+$ myL.sh L://ef7ef
+https://www.google.com
+```
+
+# Why use it?
+If you write some script to extract urls from website, but the result urls are long enough to ruin your graceful layout. Then this idea may help.
+
+# How it work?
+This script store input string to a file name with first few character of sha1sum.
+You can also apply a database to store the links, it save storage but increase dependency.
+
+
